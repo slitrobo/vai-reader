@@ -1,0 +1,152 @@
+@font-face {
+  font-family: 'Basis';
+  src:  url('../assets/BasisGrotesquePro-Regular.woff') format('woff')
+}
+
+@font-face {
+  font-family: 'Baskerville';
+  src:  url('../assets/Baskerville.woff') format('woff'),
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Basis;
+  font-size: 1.5vw;
+  z-index: 1;
+}
+
+body {
+  background-color: #F4F4F4;
+}
+
+p, h1, h2 {
+  font-family: Baskerville;
+  font-weight: normal;
+  margin-top: 1vw;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+p {
+  margin-top: 3vw;
+}
+
+nav {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+}
+
+#preloader {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  text-align: center;
+  vertical-align: middle;
+  transform: translateY(-50%);
+  transition: all 0.33s;
+  pointer-events: none;
+}
+
+#gaze {
+  width: 3px;
+  height: 3px;
+  position: fixed;
+  z-index: 3;
+  background-color: green;
+  border-radius: 3px;
+}
+
+#webgazerVideoFeed {
+  display: none;
+}
+
+#facemesh {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+#container {
+  z-index: 2;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+}
+
+#back, #paragraph, #gradientTop, #gradientBottom, #gradientOverlayTop, #gradientOverlayBottom {
+  position: fixed;
+}
+
+#back, #paragraph {
+  top: 50vh;
+  transform: translateY(-50%);
+}
+
+#back {
+  left: 1.5vw;
+}
+
+#paragraph {
+  right: 1.5vw;
+}
+
+#gradientTop, #gradientOverlayTop, #gradientBottom, #gradientOverlayBottom {
+  width: 100vw;
+  height: 10vw;
+  left:0px
+}
+
+#gradientOverlayTop, #gradientOverlayBottom {
+  height: 0vw;
+  mix-blend-mode: difference;
+  opacity: 0.3;
+}
+
+#gradientBottom, #gradientOverlayBottom {
+  bottom: 0px;
+}
+
+#gradientTop, #gradientOverlayTop {
+  top: 0px;
+}
+
+#gradientOverlayBottom {
+  background: linear-gradient(0deg, white, rgba(0,0,0,0));
+}
+
+#gradientOverlayTop {
+  background: linear-gradient(0deg, rgba(0,0,0,0), white);
+}
+
+
+.off {
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.p5canvas {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 4;
+  mix-blend-mode: exclusion;
+}
