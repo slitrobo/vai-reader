@@ -31,3 +31,6 @@ This version does support auto calibration feature as shown in the case study, s
 5. Repeat it with the very **center** of the browser window
 
 Setup completed! You are free to navigate the page with your eyes
+
+
+This project is based on [WebGazer.js](https://github.com/brownhci/WebGazer)
