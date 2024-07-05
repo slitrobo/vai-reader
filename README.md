@@ -1,5 +1,7 @@
 # VAI Reader
 
+![VAI](vai.png)
+
 VAI Reader is basic proof-of-concept implementation of VAI OS system. This prototype has the first chapter of “Hobbit” by J.R.R. Tolkien that you can read and scroll just by using your eyes.
 
 *Read the case study [here](https://slitro.bo/cases/vai).* 
