@@ -10,7 +10,7 @@ VAI Reader is basic proof-of-concept implementation of VAI OS system. This proto
 
 ```
 $ git clone https://github.com/slitrobo/vai-reader
-$ cd muse-osc-p5/
+$ cd vai-reader/
 $ npm install
 ```
 
